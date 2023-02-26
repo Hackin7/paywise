@@ -16,7 +16,7 @@ const MyPieChart = ({data, property, header}) => {
   let tempdata=data
   for (let type in keys){
     if (tempdata[keys[type]] === undefined){
-      tempdata[keys[type]] = {[property]:1}
+      tempdata[keys[type]] = {[property]:0}
       console.log(tempdata)
     }
       //data[keys[type]] = {[property]:1}
